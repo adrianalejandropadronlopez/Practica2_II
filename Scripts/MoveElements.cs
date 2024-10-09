@@ -16,6 +16,7 @@ public class MoveElements : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
+            Debug.Log("Space key was pressed");
             GameObject.FindWithTag("Cube").transform.position = cube_destination;
             GameObject.FindWithTag("Cylinder").transform.position = cylinder_destination;
             GameObject.FindWithTag("Sphere").transform.position = sphere_destination;

@@ -13,10 +13,10 @@ public class ChangeColorWithKey : MonoBehaviour
     void Update() {
         if (Input.GetKeyDown(KeyCode.C) && gameObject.name == "Cylinder") {
             gameObject.GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
-            Debug.Log("Cylinder");
+            Debug.Log("Key C was pressed, Cylinder");
         } else if (Input.GetKeyDown(KeyCode.UpArrow) && gameObject.name == "Cube") {
             gameObject.GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
-            Debug.Log("Cube");
+            Debug.Log("Key UpArrow was pressed, Cube");
         }
     }
 }

@@ -54,8 +54,10 @@ public class SpheresGroups : MonoBehaviour {
             }
             if (max_distance_group1 > max_distance_group2) {
                 group1_spheres[num_sphere_group1].GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
+                Debug.Log("The sphere with max distance to cube is " + group1_spheres[num_sphere_group1].name + " changing his color by pressing space key");
             } else {
                 group2_spheres[num_sphere_group2].GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
+                Debug.Log("The sphere with max distance to cube is " + group2_spheres[num_sphere_group2].name + " changing his color by pressing space key");
             }
         }
     }
